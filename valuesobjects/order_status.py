@@ -8,4 +8,4 @@ class OrderStatus(StateMachine):
     
     Pay = PENDING.to(PAID)
     Approve = PAID.to(APPROVED)
-    Cancel = PENDING.to(CANCELLED) | PAID.to(CANCELLED) | APPROVED.to(CANCELLED)
+    Cancel = PENDING.to(CANCELLED) | PAID.to(CANCELLED)
